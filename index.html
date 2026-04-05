@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevSpace Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="desktop">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>DevSpace</h2>
+    <button onclick="openWindow('posts')">Posts</button>
+    <button onclick="openWindow('editor')">Editor</button>
+    <button onclick="openWindow('profile')">Profile</button>
+  </div>
+
+  <!-- Floating Windows -->
+  <div id="posts" class="window">
+    <div class="title-bar">Posts</div>
+    <div class="content" id="postList"></div>
+  </div>
+
+  <div id="editor" class="window">
+    <div class="title-bar">Write Blog</div>
+    <textarea id="blogInput" placeholder="Write something..."></textarea>
+    <button onclick="addPost()">Publish</button>
+  </div>
+
+  <div id="profile" class="window">
+    <div class="title-bar">Profile</div>
+    <p>User: Developer</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
