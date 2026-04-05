@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.desktop {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #020617;
+  padding: 20px;
+  box-shadow: 0 0 20px #0ea5e9;
+}
+
+.sidebar button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  background: #0ea5e9;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Floating Windows */
+.window {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  width: 300px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid #0ea5e9;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  display: none;
+  box-shadow: 0 0 15px #0ea5e9;
+}
+
+.title-bar {
+  background: #0ea5e9;
+  padding: 10px;
+  cursor: move;
+  border-radius: 10px 10px 0 0;
+}
+
+.content {
+  padding: 10px;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  margin: 10px;
+  background: #020617;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* Glass effect */
+.window {
+  backdrop-filter: blur(12px);
+}
