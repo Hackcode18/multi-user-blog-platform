@@ -35,7 +35,6 @@ Vanilla JS (no frameworks for simplicity)
 Optional later: React upgrade
 📁 Project Structure (VS Code)
 devspace-blog/
-│
-├── index.html
-├── style.css
-└── script.js
+index.html
+style.css
+script.js
